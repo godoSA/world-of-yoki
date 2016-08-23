@@ -1,0 +1,49 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{textcomp}
+\usepackage[final]{pdfpages}
+\usepackage{fancyhdr}
+\usepackage{makeidx}
+\usepackage{multicol}
+\usepackage{tabto}
+\fontencoding{T1}
+\pagestyle{fancyplain}
+\author{}
+\title{YOKI - fucking mad}
+\date{}
+\makeindex
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+\setlength{\columnsep}{1cm}
+\setlength{\columnseprule}{1pt}
+\begin{document}
+	\maketitle
+	\pagebreak
+	\setcounter{tocdepth}{3}
+	\tableofcontents
+	\pagebreak
+	\part{Introduction}
+
+	\printindex
+	
+	\input{introduction.tex}
+	
+	\pagebreak
+	\part{Samples}
+	\input{powers.tex}
+
+	\pagebreak
+	\part{Perks}
+	\input{perks.tex}
+	
+\end{document}
